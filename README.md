@@ -2,7 +2,7 @@
 Se subiran las actividades del tercer semestre
 
 Integrantes de TEAM NOCHE: 
-• Alvarenga, Analia 
+* **• Alvarenga, Analia **
 • Contreras, Yamila 
 • González, María 
 • Marchetti, Bruno 
