@@ -1,6 +1,7 @@
 # TeamNoche-Tercer-Semestre
-:---![photo](https://user-images.githubusercontent.com/101668956/235321849-c1ba3554-2854-4295-9dff-1c4eba771c52.jpg):--
----:TEAM NOCHE es un equipo de entusiastas que se enfrentan al reto de dominar el arte de la programación. Con dedicación, esfuerzo y curiosidad, van adquiriendo los conocimientos y habilidades necesarios para crear soluciones innovadoras y eficientes. Cada día es una oportunidad para aprender algo nuevo, resolver problemas, compartir experiencias y apoyarse mutuamente. Su pasión por la programación les impulsa a superar sus propios límites y a disfrutar del proceso de aprendizaje.---:
+![photo](https://user-images.githubusercontent.com/101668956/235321849-c1ba3554-2854-4295-9dff-1c4eba771c52.jpg)
+
+TEAM NOCHE es un equipo de entusiastas que se enfrentan al reto de dominar el arte de la programación. Con dedicación, esfuerzo y curiosidad, van adquiriendo los conocimientos y habilidades necesarios para crear soluciones innovadoras y eficientes. Cada día es una oportunidad para aprender algo nuevo, resolver problemas, compartir experiencias y apoyarse mutuamente. Su pasión por la programación les impulsa a superar sus propios límites y a disfrutar del proceso de aprendizaje.
 
 
 Aqui se subiran las actividades del tercer semestre de 
