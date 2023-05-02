@@ -18,3 +18,13 @@ console.log(persona.edad);
 console.log(persona);
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Julio Ezequiel Soria
+//Crea un nuevo objeto en memoria
+
+let perosna2 = new Object() 
+perosna2.nombre = 'Juan'
+perosna2.direccion = 'Salada 14'
+perosna2.telefono = '02000100'
+
+console.log(perosna2.telefono)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
