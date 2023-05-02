@@ -13,3 +13,14 @@ for(let i = 0; i < autos.length; i++){
     console.log(i+':'+autos[i]);
 }
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Julio Ezequiel Soria
+//Como preguntar si es un array
+
+const autos2 = ['Ferrari', 'Reanult', 'BMW']
+
+console.log(typeof(autos2))// no podemos usar el metodo typeof ya que solo muestra que es un objeto
+
+console.log(Array.isArray(autos2)) //usamos la clase Array.isArray que devuelve un booleano
+
+console.log(autos2 instanceof Array) //Devuelve un booleano
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
