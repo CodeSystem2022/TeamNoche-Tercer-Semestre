@@ -23,6 +23,7 @@ except TypeError as e:
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #Suarez, Carlos Hernan
+#Bloques else y finally al manejar excepciones
 
 try:
     a = int(input('Digite el primer numero: '))
