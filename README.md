@@ -34,3 +34,20 @@ Integrantes de TEAM NOCHE:
 | Tercer semana | **Hernan Suarez**    |
 | Cuarta semana | **Analia Alvarenga** |
 ```
+
+```
+| SCRUM MASTER MES DE MAYO             |
+|---------------|----------------------|
+| Primer semana | **Ezequiel Soria**   | 
+| Segunda semana| **Florencia Pons**   |
+| Tercer semana | **Yamila Contreras** |
+| Cuarta semana | **Bruno Marchetti**  |
+```
+```
+| SCRUM MASTER MES DE JUNIO            |
+|---------------|----------------------|
+| Primer semana |**Alfredo Marino**    | 
+| Segunda semana| **Maria Gonzalez**   |
+| Tercer semana | **Marlene Gomez**    |
+| Cuarta semana |  **Franco Videla**   |
+```
