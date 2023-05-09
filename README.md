@@ -26,23 +26,25 @@ Integrantes de TEAM NOCHE:
 • [Suarez, Carlos Hernan](https://github.com/Hernan-DOS)   
 • [Videla, Franco](https://github.com/odin1301)
 
-```
-| SCRUM MASTER MES DE ABRIL            |
-|---------------|----------------------|
-| Primer semana | No hubo              | 
-| Segunda semana| No hubo              |
-| Tercer semana |   Hernan Suarez      |
-| Cuarta semana |   Analia Alvarenga   |
-```
 
-```
+## 📆 `Scrum Master mes de abril`
+
+| SEMANA                |     SCRUM MASTER     |      
+|-----------------------|----------------------|
+|:pencil: Primer semana | No hubo              | 
+|:pencil: Segunda semana| No hubo              |
+|:pencil: Tercer semana |   Hernan Suarez      |
+|:pencil: Cuarta semana |   Analia Alvarenga   |
+
+
+
 | SCRUM MASTER MES DE MAYO             |
 |---------------|----------------------|
-| Primer semana | Ezequiel Soria       | 
-| Segunda semana| Florencia Pons       |
-| Tercer semana |   Yamila Contreras   |
-| Cuarta semana |   Bruno Marchetti    |
-```
+|:pencil: Primer semana | Ezequiel Soria       | 
+|:pencil: Segunda semana| Florencia Pons       |
+|:pencil: Tercer semana |   Yamila Contreras   |
+|:pencil: Cuarta semana |   Bruno Marchetti    |
+
 ```
 | SCRUM MASTER MES DE JUNIO            |
 |---------------|----------------------|
