@@ -35,3 +35,38 @@ public class Empleado {
     
 }
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/**
+* ezequiel Soria
+* Ejercicio con instanceof Parte 1 y 2
+*/
+package Test;
+
+import domain.*;
+
+
+
+public class TestIstanceOF {
+    public static void main(String[] args) {
+        Empleado empleado1 = new Empleado("Juan", 10000);//clase padre
+        determinaTipo(empleado1);
+        empleado1 = new Gerente("Julio", 5000, "Sistema");//clase hija
+        //determinaTipo(empleado1);
+    }
+    
+    public static void determinaTipo(Empleado empleado){
+        if(empleado instanceof Gerente){
+            System.out.println("Es de tipo Gerente");
+            Gerente gerente = (Gerente)empleado;
+            //((Gerente) empleado).getDepartamento();
+            System.out.println("gerente = " + gerente.getDepartamento());
+        }
+        else if(empleado instanceof Empleado){
+            System.out.println("Es de tipo Empleado");
+            // Gerente gerente = (Gerente)empleado;
+            //System.out.println("gerente = " + gerente.getDepartamento());
+        }
+        else if(empleado instanceof Object){
+            System.out.println("Es de tipo Object");
+        }
+    }
+}
