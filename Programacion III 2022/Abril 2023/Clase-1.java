@@ -1,5 +1,5 @@
 /* Florencia Pons
-Creación de clase DispositivoEntrada*/
+1.1 Creación de clase DispositivoEntrada*/
 
 package ar.com.system2023.mundopc;
 
@@ -37,7 +37,7 @@ public class DispositivoEntrada {
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /**
 Julio Ezequiel Soria
-Creacion de clase main de Mundo Pc
+1.6 Comenzamos las pruebas creando objetos de cada clase y las agregamos a la lista de Orden: Parte 1, 2 y 3
  */
 package mundopc;
 
@@ -235,7 +235,7 @@ public class Computadora {
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /**
 Carlos Hernan Suarez
-Creacion de clase Orden 1 y 2
+1.6 Comenzamos las pruebas creando objetos de cada clase y las agregamos a la lista de Orden: Parte 1, 2 y 3
  */
             
 package ar.com.system2023.mundopc;
@@ -285,57 +285,49 @@ Carlos Hernan Suarez
 Creacion de clase Orden 1 y 2
  */
 
+package ar.com.system2023.mundopc;
 
-public class mundoPC1 {
-    public static void main(String[] args) {
-        //Creamos el 1er objeto
-        Monitor monitorHP = new Monitor ("HP", 13); //importar clase
-        Teclado tecladoHP = new Teclado ("Bluethoot", "HP");
-        Raton ratonHP = new Raton ("Bluethoot", "HP");
-        Computadora computadoraHP = new Computadora("ComputadoraHP", monitorHP, tecladoHP, ratonHP);
-        
-        //Creamos otros objetos de diferente marca
-        Monitor monitorGamer = new Monitor ("Gamer", 32);
-        Teclado tecladoGamer = new Teclado ("Bluethoot", "Gamer");
-        Raton ratonGamer = new Raton ("Bluethoot", "Gamer");
-        Computadora computadoraGamer = new Computadora("Computadora Gamer", monitorGamer, tecladoGamer, ratonGamer);
+public class Monitor {
+    private final int idMonitor;
+    private String marca;
+    private double tamanio;
+    private static int contadorMonitores;
 
-        //Tercer objeto
-        Monitor monitoSamsung = new Monitor ("Samsung", 24);
-        Teclado tecladoSamsung = new Teclado ("Bluethoot", "Samsung");
-        Raton ratonSamsung = new Raton ("Bluethoot", "Samsung");
-        Computadora computadorSamsung = new Computadora("Computadora Samsung", monitorSamsung, tecladoSamsung, ratonSamsung);
+    private Monitor() {
+        this.idMonitor = ++Monitor.contadorMonitores;
+    }
 
-        //Cuarto objeto
-        Monitor monitorDell = new Monitor ("Dell", 24);
-        Teclado tecladoDell = new Teclado ("Bluethoot", "Dell");
-        Raton ratonDell = new Raton ("Cable", "Dell");
-        Computadora computadoraDell = new Computadora("Computadora Dell", monitorDell, tecladoDell, ratonDell);
+    public Monitor(String marca, double tamanio) {
+        this(); // Llamado al constructor vacío
+        this.marca = marca;
+        this.tamanio = tamanio;        
+    }
 
-        //Quinto objeto
-        Monitor monitorHitachi = new Monitor ("Hitachi", 32);
-        Teclado tecladoHitachi = new Teclado ("Bluethoot", "Hitachi");
-        Raton ratonHitachi = new Raton ("Bluethoot", "Hitachi");
-        Computadora computadoraHitachi = new Computadora("Computadora Hitachi", monitorHitachi, tecladoHitachi, ratonHitachi);
+    public String getMarca() {
+        return marca;
+    }
 
-        Orden orden1 = new Orden(); //Inicializamos el arreglo vacio
-        Orden orden2 = new Orden(); //Una nueva lista para el orden2
-        
-        // Agregamos computadoras
-        orden1.agregarComputadora(computadoraHP); 
-        orden1.agregarComputadora(computadoraGamer);
-        orden1.agregarComputadora(computadoraSamsung);
-        orden1.agregarComputadora(computadoraDell);
-        orden1.agregarComputadora(computadoraHitachi);
-        orden1.mostrarOrden();
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+    
+    public double getTamanio() {
+        return this.tamanio;
+    }
 
-        Computadora computadorasVarias = new Computadora("Computadoras de diferentes marcas", monitorGamer, tecladoGamer, ratonHP);
-        orden2.agregarComputadora(computadorasVarias);
+    public void setTamanio(double tamanio) {
+        this.tamanio = tamanio;
+    }
+    
+    public int getIdMonitor() {
+        return this.idMonitor;
+    }
 
-        orden1.mostrarOrden();
-        orden2.mostrarOrden();
-    }   
-    } 
+    @Override    
+    public String toString() {
+        return "Monitor{" + "idMonitor=" + idMonitor + ", marca=" + marca + ", tamanio=" + tamanio + '}';
+    }
+}
         
         
 
