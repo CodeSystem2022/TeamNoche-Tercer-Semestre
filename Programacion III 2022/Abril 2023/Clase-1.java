@@ -279,7 +279,63 @@ public class Orden {
 
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/**
+Carlos Hernan Suarez
+Creacion de clase Orden 1 y 2
+ */
 
 
+public class mundoPC1 {
+    public static void main(String[] args) {
+        //Creamos el 1er objeto
+        Monitor monitorHP = new Monitor ("HP", 13); //importar clase
+        Teclado tecladoHP = new Teclado ("Bluethoot", "HP");
+        Raton ratonHP = new Raton ("Bluethoot", "HP");
+        Computadora computadoraHP = new Computadora("ComputadoraHP", monitorHP, tecladoHP, ratonHP);
+        
+        //Creamos otros objetos de diferente marca
+        Monitor monitorGamer = new Monitor ("Gamer", 32);
+        Teclado tecladoGamer = new Teclado ("Bluethoot", "Gamer");
+        Raton ratonGamer = new Raton ("Bluethoot", "Gamer");
+        Computadora computadoraGamer = new Computadora("Computadora Gamer", monitorGamer, tecladoGamer, ratonGamer);
 
+        //Tercer objeto
+        Monitor monitoSamsung = new Monitor ("Samsung", 24);
+        Teclado tecladoSamsung = new Teclado ("Bluethoot", "Samsung");
+        Raton ratonSamsung = new Raton ("Bluethoot", "Samsung");
+        Computadora computadorSamsung = new Computadora("Computadora Samsung", monitorSamsung, tecladoSamsung, ratonSamsung);
+
+        //Cuarto objeto
+        Monitor monitorDell = new Monitor ("Dell", 24);
+        Teclado tecladoDell = new Teclado ("Bluethoot", "Dell");
+        Raton ratonDell = new Raton ("Cable", "Dell");
+        Computadora computadoraDell = new Computadora("Computadora Dell", monitorDell, tecladoDell, ratonDell);
+
+        //Quinto objeto
+        Monitor monitorHitachi = new Monitor ("Hitachi", 32);
+        Teclado tecladoHitachi = new Teclado ("Bluethoot", "Hitachi");
+        Raton ratonHitachi = new Raton ("Bluethoot", "Hitachi");
+        Computadora computadoraHitachi = new Computadora("Computadora Hitachi", monitorHitachi, tecladoHitachi, ratonHitachi);
+
+        Orden orden1 = new Orden(); //Inicializamos el arreglo vacio
+        Orden orden2 = new Orden(); //Una nueva lista para el orden2
+        
+        // Agregamos computadoras
+        orden1.agregarComputadora(computadoraHP); 
+        orden1.agregarComputadora(computadoraGamer);
+        orden1.agregarComputadora(computadoraSamsung);
+        orden1.agregarComputadora(computadoraDell);
+        orden1.agregarComputadora(computadoraHitachi);
+        orden1.mostrarOrden();
+
+        Computadora computadorasVarias = new Computadora("Computadoras de diferentes marcas", monitorGamer, tecladoGamer, ratonHP);
+        orden2.agregarComputadora(computadorasVarias);
+
+        orden1.mostrarOrden();
+        orden2.mostrarOrden();
+    }   
+    } 
+        
+        
 
