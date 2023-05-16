@@ -36,4 +36,4 @@ console.log(persona)
 // Funciones de tipo expresion o anonima
 let x = function(a, b){return a + b};
 resultado2 = x(5, 6);          // AL LLAMARLA SE PONE LA VARIABLE Y PARENTESIS
-console.log(resultado); 11
+console.log(resultado); 
