@@ -31,3 +31,9 @@ function cambiarValorObjeto(p1) {//la variable p1 reasigna los datos a los param
 
 cambiarValorObjeto(persona)
 console.log(persona)
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+    // Marino Alfredo
+// Funciones de tipo expresion o anonima
+let x = function(a, b){return a + b};
+resultado2 = x(5, 6);          // AL LLAMARLA SE PONE LA VARIABLE Y PARENTESIS
+console.log(resultado); 11
