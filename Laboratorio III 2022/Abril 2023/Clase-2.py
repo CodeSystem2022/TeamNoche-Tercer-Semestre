@@ -25,3 +25,12 @@ archivo.close() # Cerramos priomero el archivo a copiar
 archivo2.close() # Cerramos la copia
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
+#Marino Alfredo
+# with => abre el archivo y cierra de manera automática
+# Manejo de contexto with: sintaxis simplicada, abre y cierra el archivo
+
+with open('prueba.txt', 'r', encoding='utf8') as archivo:
+    print(archivo.read())
+
+# No hace falta el try catch ni el finally
+# Utiliza diferentes métodos: __enter__ este es el que abre y __exit__ el que cierra
