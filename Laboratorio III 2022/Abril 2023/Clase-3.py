@@ -40,3 +40,20 @@ class CatalogoPeliculas:
         os.remove(cls.ruta_archivo)
         print(f'Archivo eliminado: {cls.ruta_archivo}')
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+# ALFREDO MARINO
+# test_catalogo_peliculas
+opcion = None
+while opcion != 4:
+    try:
+        print('Opciones')
+        print('1. Aregrar Pelicula')
+        print('2. Lista de peliculas')
+        print('3. Eliminar ctatálogo de peliculas')
+        print('4. Salir')
+        opcion=  int(input('Digite una opción de menú (1-4):'))
+        
+    except Exception as e:
+        print(f'Ocurrió un error de tipo: {e}')
+        opcion = None
+    else:
+        print('Salimos del programa')
