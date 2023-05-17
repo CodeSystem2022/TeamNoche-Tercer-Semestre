@@ -28,3 +28,9 @@ perosna2.telefono = '02000100'
 
 console.log(perosna2.telefono)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Alfredo Marino
+// agregar y eliminar propiedades de un objeto
+
+console.log(persona.apellido);
+persona.apellido = "Marino"; // cambio dinamico de un valor del objeto
+console.log(persona.apellido);
