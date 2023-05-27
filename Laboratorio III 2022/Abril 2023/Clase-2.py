@@ -57,3 +57,46 @@ archivo.close() # cerramos el primer archivo
 archivo2.close() # cerramos el segundo archivo
 
 print('Se ha terminado el proceso de leer y copiar archivos')
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Contreras, Yamila Belen
+
+#Lectura de archivos
+
+# manejo_archivos.py
+# Declaramos una variable
+try:
+    archivo = open('prueba.txt', 'w', encoding='utf8') # W = write
+    archivo.write('Programamos con diferentes tipos de archivos, ahora en txt.\n')
+    archivo.write('Los acentos son importantes para las palabras\n')
+    archivo.write('Como por ejemplo: acción, ejecución y producción\n')
+    archivo.write('Las letras son:\nr read leer, \na append anexa, \nw write escribe, \nx crea un archivo')
+    archivo.write('\nt está para texto o text, \nb archivos binarios, \nw+ lee y escribe son iguales r+\n')
+    archivo.write('Y con esto finalizamos')
+except Exception as e:
+    print(e)
+finally: # Siempre se ejecuta
+    archivo.close() # Con esto se debe cerrar el archivo
+# archivo.write('Todo quedó perfecto'): Esto es un error
+
+#leer_archivo.py
+archivo = open('prueba.txt', 'r', encoding='utf8') # Las letras son: 'r' read, 'a' append, 'w' write, 'x'
+#'c:\\users\\usuario\\TecnicaturaProgramacion3\\Python3\\Archivos\\Leccion02\\
+#print(archivo.read())
+#print(archivo.read(16))
+#print(archivo.read(10)) # Continuamos desde la línea anterior
+print(archivo.readline())
+print(archivo.readline())
+
+#prueba.txt
+archivo = open('prueba.txt', 'r', encoding='utf8') # Las letras son: 'r' read, 'a' append, 'w' write, 'x'
+#'c:\\users\\usuario\\TecnicaturaProgramacion3\\Python3\\Archivos\\Leccion02\\
+#print(archivo.read())
+#print(archivo.read(16))
+#print(archivo.read(10)) # Continuamos desde la línea anterior
+print(archivo.readline())
+print(archivo.readline())
+
+
+
+
