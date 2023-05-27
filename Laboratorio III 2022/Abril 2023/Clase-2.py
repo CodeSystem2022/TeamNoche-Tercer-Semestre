@@ -36,4 +36,24 @@ with open('prueba.txt', 'r', encoding='utf8') as archivo:
 # Utiliza diferentes métodos: __enter__ este es el que abre y __exit__ el que cierra
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Bruno Marchetti
+#Mas formas de trabajar con archivos
+archivo = open('prueba.txt', 'r',
+               encoding='utf8')
+# print(archivo.read())
+# print(archivo.read(15))
+# print(archivo.read(15)) #continuamos con la linea anterior
+# print(archivo.readline())
 
+# vamos a iterar el archivo, cada una de las lineas
+# for linea in archivo:
+    # print(linea): iteramos la totalidad de los elementos del archivo
+    # print(archivo.readlines()):
+# print(archivo.readlines()[1]) # accedemos al archivo como si fuera una lista
+# Anexamos información, copiamos a otro
+archivo2 = open('copia.txt', 'w', encoding='utf8')
+archivo2.write(archivo.read())
+archivo.close() # cerramos el primer archivo
+archivo2.close() # cerramos el segundo archivo
+
+print('Se ha terminado el proceso de leer y copiar archivos')
