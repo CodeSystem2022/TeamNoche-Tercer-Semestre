@@ -36,13 +36,4 @@ with open('prueba.txt', 'r', encoding='utf8') as archivo:
 # Utiliza diferentes métodos: __enter__ este es el que abre y __exit__ el que cierra
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Contreras, Yamila Belen
 
-# Introducción al manejo de archivos
-# Declaramos una variable
-try:
-    archivo = open('prueba.txt', 'w') # W = write
-except Exception as e:
-    print(e)
-finally: # Siempre se ejecuta
-    archivo.close() # Con esto se debe cerrar el archivo
