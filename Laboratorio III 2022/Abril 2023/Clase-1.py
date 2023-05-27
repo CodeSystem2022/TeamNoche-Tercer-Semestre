@@ -123,5 +123,21 @@ except Exception as e:
 print(f'El resultado es: {resultado}')
 print('Seguimos...')
 
+#Bruno Marchetti
+#Procesar clases de exception más específicas
 
 
+def dividir_numeros(a, b):
+    try:
+        resultado = a / b
+        return resultado
+    except ZeroDivisionError:
+        print("Error: División entre cero.")
+    except TypeError:
+        print("Error: Tipos de datos incompatibles.")
+    except Exception as e:
+        print("Error:", str(e))
+# Ejemplos de entradas que nos ejecutarian las excepciones
+print(dividir_numeros(10, 2))  # Resultado: 5.0
+print(dividir_numeros(10, 0))  # Resultado: Error: División entre cero.
+print(dividir_numeros(10, '2'))  # Resultado: Error: Tipos de datos incompatibles.        
