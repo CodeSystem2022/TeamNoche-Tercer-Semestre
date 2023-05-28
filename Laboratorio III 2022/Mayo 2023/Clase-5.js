@@ -55,3 +55,11 @@ let miFuncion1 = new function(){}; // Todo despues de new es  considerado objeto
 let miFuncion2 = function(){}; // Notacion simplificada y recomendada
 
 //-------------------------------------------------------------------------------------------------------------------------------------------
+
+// Marlene Soriano
+// El uso de apply
+
+let arreglo = ['Esp.', '5498888888'];
+console.log(persona4.nombreCompleto2.apply(persona5, arreglo));
+
+//-------------------------------------------------------------------------------------------------------------------------------------------
