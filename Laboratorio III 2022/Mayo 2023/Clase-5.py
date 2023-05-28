@@ -1,5 +1,27 @@
+# Marlene Soriano
+# Uso de with y funcion fetchone en psycopg2
+
+import psycopg2 #Esto es para poder conectarnos a Postgre
+
+conexion = psycopg2.connect(user='postgres', password='admin', host='127.0.0.1', port='5432', database='test_bd')
+try:
+    with conexion:
+        with conexion.cursor() as cursor:
+            sentencia = 'SELECT * FROM persona WHERE id_persona = %s' #Placeholder
+            id_persona = input('Digite un numero para el id_persona: ')
+            cursor.execute(sentencia, (id_persona,)) # Asi ejecutamos la sentencia
+            registros = cursor.fetchone() # Recuperamos todos los registros que formaran una lista
+            print(registros)
+except Exception as e:
+    print(f'Ocurrio un error: {e}')
+finally:
+    conexion.close()
+
+#-------------------------------------------------------------------------------------------------------------------------------------------
+
 # Franco J. Videla 
 # Actualizar o editar un registro en la Base de datos 
+
 import psycopg2 # Esto es para poder conectarnos a Postgre
 
 conexion = psycopg2.connect(user='postgres', password='admin', host='127.0.0.1', port='5432', database='test_bd')
@@ -21,6 +43,7 @@ finally:
 
 # Marlene Soriano
 # Actualizar o modificar varios registros en BD
+
 import psycopg2 # Esto es para poder conectarnos a Postgre
 
 conexion = psycopg2.connect(user='postgres', password='admin', host='127.0.0.1', port='5432', database='test_bd')
