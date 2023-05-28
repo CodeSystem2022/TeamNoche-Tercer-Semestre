@@ -51,6 +51,6 @@ Integrantes de TEAM NOCHE:
 |-----------------------|----------------------|
 |:pencil: Primer semana |  Alfredo Marino      | 
 |:pencil: Segunda semana|   Maria Gonzalez     |
-|:pencil: Tercer semana |   Marlene Gomez      |
+|:pencil: Tercer semana |   Marlene Soriano    |
 |:pencil: Cuarta semana |    Franco Videla     |
 
