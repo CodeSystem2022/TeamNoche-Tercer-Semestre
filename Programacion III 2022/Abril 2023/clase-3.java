@@ -143,7 +143,7 @@ public class TestDefault {
     System.out.println("claseH2 atributo default = " + claseH2.atributoDefault9;
                        ----------------------------------------------------------------------------------------------------------------------------------------------------------
 //Bruno Marchetti
-//1.6 Modificadores de acceso protected
+//1.6 Modificadores de acceso private
                        package paquete1;
 
 import paquete2.Clase4;
