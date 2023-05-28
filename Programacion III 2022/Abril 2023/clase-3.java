@@ -72,9 +72,9 @@ public class TestModificadoresAcceso {
         System.out.println(" Clase1 = " + clase1.atributoPublic);
         clase1.metodoPublico();
         
-        ----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
 //Bruno Marchetti
-           //1.4 Modificadores de acceso protected
+//1.4 Modificadores de acceso protected
             package paquete2;
 
 import paquete1.Clase1;
@@ -116,8 +116,6 @@ protected void metodoProtected(){
     
 }
 
-
-#MODIFICACIONES DENTRO DE  TESTMODIFICADORESDEACCESO
 package test;
 
 import paquete1.Clase1;
@@ -133,3 +131,13 @@ public class TestModificadoresdeAcceso {
     }
     
 }
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+//Bruno Marchetti
+//1.4 Modificadores de acceso protected
+        package paquete1;
+
+public class TestDefault {
+  public static void main(String[] args){
+    ClaseHija2 claseH2 = new ClaseHija2();
+    claseH2.atributoDefault = "Cambio desde la prueba";
+    System.out.println("claseH2 atributo default = " + claseH2.atributoDefault9;
