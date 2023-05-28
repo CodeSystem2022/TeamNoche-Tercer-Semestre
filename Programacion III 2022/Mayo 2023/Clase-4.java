@@ -96,3 +96,60 @@ public class TestSobreescritura {
     }
     
 }
+------------------------------------------------------------------------------------------------------------------------------
+    
+//Marchetti Bruno
+    //Instance Of p1 y p2
+    
+    public class Empleado {
+    protected String nombre;
+    protected double sueldo;
+
+    public Empleado(String nombre, double sueldo){
+        this.nombre = nombre;
+        this.sueldo = sueldo;
+
+    }
+    // Metodo para la sobreescritura
+    public String obtenerDetalles(){
+        return "Nombre: "+ this.nombre+", Sueldo: "+this.sueldo;
+
+
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public double getSueldo() {
+        return sueldo;
+    }
+    public void setSueldo(double sueldo) {
+        this.sueldo = sueldo;
+    }
+}
+
+public class Gerente extends Empleado {
+    private String departamento;
+
+    public Gerente(String nombre, double sueldo, String departamento){
+        super(nombre, sueldo);
+        this.departamento = departamento;
+        
+    }
+
+    public String getDepartamento() {
+        return departamento;
+    }
+
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
+    }
+    // Sobreescribimos el metodo
+    @Override
+    public String obtenerDetalles(){
+        return super.obtenerDetalles()+", Departamento: "+this.departamento;
+    }
+    
+}
