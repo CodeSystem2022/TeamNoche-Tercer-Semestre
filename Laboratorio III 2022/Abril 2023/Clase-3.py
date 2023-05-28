@@ -62,7 +62,7 @@ while opcion != 4:
 # Contreras, Yamila Belen
 # Pruebas ingresando otras clases (Parte 1)
 
-from dominio.Pelicula import Pelicula
+from dominio.pelicula import Pelicula
 from servicio.catalogo_peliculas import CatalogoPeliculas as cp
 opcion = None
 while opcion != 4:
