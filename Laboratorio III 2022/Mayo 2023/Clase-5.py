@@ -28,8 +28,8 @@ try:
     with conexion:
         with conexion.cursor() as cursor:
                 sentencia = 'UPDATE persona SET nombre=%s, apellido=%s, email=%s WHERE id_persona=%s'
-                valores = ('Marlene', 'Soriano', 'marlenesoriano1209@gmail.com', 4) # Es una tupla de tuplas
-                          ('Franco', 'Videla', 'francojvidela@gmail.com', 5) #Es una tupla de tuplas
+                valores = (('Marlene', 'Soriano', 'marlenesoriano1209@gmail.com', 4), # Es una tupla de tuplas
+                          ('Franco', 'Videla', 'francojvidela@gmail.com', 5)) #Es una tupla de tuplas
                 cursor.executemany(sentencia, valores) # De esta manera ejecutamos la sentencia
                 registros_actualizados = cursor.rowcount
                 print(f'Los registros actualizados son: {registros_actualizados}')
@@ -88,3 +88,30 @@ finally:
     conexion.close()
 
 #----------------------------------------------------------------------------------------------------------------------------------------  
+
+# Franco J. Videla
+# Insertar varios registros en Base de Datos
+
+import psycopg2 # Conexion a postgres
+conexion = psycopg2.connect(user='postgres', password='admin', host='127.0.0.1', port='5432', database = 'test_bd')
+try:
+    with conexion:
+        with conexion.cursor() as cursor:
+            sentencia = 'INSERT INTO persona (nombre, apellido, email)VALUES (%s, %s, %s)'
+            valores = (
+                ('Franco', 'Videla', 'francojvidela@gmail.com'),
+                ('Marlene', 'Soriano', 'marlenesoriano1209@gmail.com'),
+                ('Yamila', 'Contreras', '@gmail.com')
+            ) # Es una tupla de tuplas
+            cursor.executemany(sentencia, valores) # Así ejecutamos la sentencia
+            # conexion.commit() esto se utiliza para guardar los cambios en la base de datos
+            registros_insertados = cursor.rowcount
+            print(f'Los registros insertados son: {registros_insertados}')
+except Exception as e:
+    print(f'Ocurrió un error: {e}')
+finally:
+    conexion.close()
+
+#----------------------------------------------------------------------------------------------------------------------------------------  
+
+# 
