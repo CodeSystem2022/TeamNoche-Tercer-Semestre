@@ -79,7 +79,7 @@ while opcion != 4:
             cp.agregar_peliculas(pelicula)
         elif opcion == 2:
             cp.listar_peliculas()
-        elif == 3:
+        elif opcion == 3:
             cp.eliminar_peliculas()
     except Exception as e:
         print(f'Ocurrió un error de tipo: {e}')
