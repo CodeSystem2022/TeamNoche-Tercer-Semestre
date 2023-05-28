@@ -44,3 +44,15 @@ consola.log(automático);
 //TERCERA FORMA DE AGREGAR ELEMENTOS TENER "CUIDADO"
 autos[6] = 'Renault';//aqui ocupamos un espacio de memoria de mas,queda un espacio vacio
 consola.log(autos);
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//BRUNO MARCHETTI 
+
+//Recorremos los elementos de un arreglo
+console.log(autos[0]); //acceso manual x indice
+console.log(autos[2]);
+
+//acceso mediante ciclo
+for(let i = 0; i < autos.length; i++){
+    console.log(i+ ' : ' +autos[i]);
+}
