@@ -84,3 +84,22 @@ public class ImplementacionOracle implements IAccesoDatos{
     }
     
 }
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Contreras, Yamila Belen
+
+#7.5 Manejo de Interfaces. Pruebas. Parte 1 y 2
+    
+//TestInterfaces. MySql
+
+package test;
+
+import accesodatos.*;
+
+public class TestInterfaces {
+    public static void main (String[] args) {
+        IAccesoDatos datos = new ImplementacionMySql();
+        datos.listar();
+    }
+}    
+
