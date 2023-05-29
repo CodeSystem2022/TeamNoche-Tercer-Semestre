@@ -1,3 +1,4 @@
+
 //Florecia Pons
 //Proyecto Conversión de Objetos
 //Creamos la clase Empleado
@@ -37,4 +38,196 @@ public class Empleado {
       
 }
 
+// Creamos la clase Escritor 
 
+package domain;
+
+public class Escritor extends Empleado{
+    final TipoEscritura tipoEscritura;
+    
+    public Escritor(String nombre, double sueldo, TipoEscritura tipoEscritura){
+        super(nombre, sueldo);
+        this.tipoEscritura = tipoEscritura;
+    }
+    
+    //Metodo para sobreescribir
+    @Override
+    public String obtenerDetalles(){
+        return super.obtenerDetalles()+", Tipo Escritura: "+tipoEscritura.getDescripcion();
+         
+    }
+    
+    @Override
+    public String toString(){
+        return "Escritor(" + "tipoEscritura=" + tipoEscritura + '}' + " "+super.toString();
+    }
+    
+    public TipoEscritura getTipoEscritura(){
+        return this.tipoEscritura;
+    }
+    
+}
+
+//Creamos enumeración TipoEscritura
+
+package domain;
+
+public enum TipoEscritura {
+    CLASICO ("Escritura a mano"),
+    MODERNO ("Escritura digital");
+    
+    private final String descripcion;
+    
+    private TipoEscritura(String descripcion){ //Constructor
+        this.descripcion = descripcion;
+
+    }
+    
+    //Metodo get
+    public String getDescripcion(){
+        return this.descripcion;
+    }
+}
+------------------------------------------------------------------
+//Carga de la clase TEST
+  package Test;
+
+/**
+ * @author Soria ezequiel
+ */
+import domain.*;
+
+public class TestConversionObjetos {
+    public static void main(String[] args) {
+        Empleado empleado;
+        empleado = new Escritor("Juan", 5000, TipoEscritura.CLASICO);
+        //System.out.println("empleado = " + empleado);
+        //System.out.println(empleado.obtenerDetalles());
+        
+        //Downcasting
+        ((Escritor)empleado).getTipoEscritura(); //una forma de hacerlo
+        
+        Escritor escritor = (Escritor)empleado; //Segunda forma
+        escritor.getTipoEscritura();
+        
+        //Upcasting
+        Empleado empleado2 = escritor;
+        System.out.println(empleado2.obtenerDetalles());
+    }
+}
+-----------------------------------------------------------------------------
+   //5.4 Hashcode y Equals:
+// Marino Alfredo
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 53 * hash + Objects.hashCode(this.nombre);
+        hash = 53 * hash + (int) (Double.doubleToLongBits(this.sueldo) ^ (Double.doubleToLongBits(this.sueldo) >>> 32));
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Empleado other = (Empleado) obj;
+        if (Double.doubleToLongBits(this.sueldo) != Double.doubleToLongBits(other.sueldo)) {
+            return false;
+        }
+        if (!Objects.equals(this.nombre, other.nombre)) {
+            return false;
+        }
+        return true;
+    }
+}
+-----------------------------------------------------------------------------
+   //Creamos Clase Object 
+   //Bruno Marchetti
+   
+   package test;
+
+import domain. *;
+
+public class TestClaseObject {
+    public static void main(String[] args) {
+        Empleado empleado1 = new Empleado("Bruno", 5000);
+        Empleado empleado2 = new Empleado("Bruno", 5000);
+        if(empleado1 == empleado2){
+            System.out.println("Tienen la misma referencia en memoria" );
+        }
+        else{
+            System.out.println("Tienen distinta referencia en memoria");
+        }
+        
+        if(empleado1.equals(empleado2)){
+            System.out.println("Los objetos son iguales en contenido");
+        }
+        else{
+            System.out.println("Los objetos son distintos en contenido");
+        }
+        
+        if(empleado1.hashCode() == empleado2.hashCode()){
+            System.out.println("El valor hashCode es igual");
+        }
+        else{
+            System.out.println("El valor hashCode es diferente");
+        }
+    }
+}
+-----------------------------------------------------------------------------
+   //5.5 Clases Abstractas (abstract)
+   //Bruno Marchetti
+   //Figura Geometrica
+
+package domain;
+
+public abstract class FiguraGeometrica {
+    protected String tipoFigura;
+
+    protected FiguraGeometrica(String tipoFigura) {
+        this.tipoFigura = tipoFigura;
+    }
+
+    public abstract void dibujar();
+
+    public String getTipoFigura() {
+        return tipoFigura;
+    }
+
+    public void setTipoFigura(String tipoFigura) {
+        this.tipoFigura = tipoFigura;
+    }
+
+    @Override
+    public String toString() {
+        return "FiguraGeometrica{" +
+                "tipoFigura='" + tipoFigura + '\'' +
+                '}';
+    }
+}
+
+-----------------------------------------------------------------------------
+   //5.5 Clases Abstractas (abstract)
+   //Bruno Marchetti
+   //Figura Rectangulo
+   
+   package domain;
+
+public class Rectangulo extends FiguraGeometrica{
+    public Rectangulo(String tipoFigura) {
+        super(tipoFigura);
+    }
+
+    @Override
+    public void dibujar() {
+        System.out.println("Se imprime un: " + this.getClass().getSimpleName());
+    }
+}

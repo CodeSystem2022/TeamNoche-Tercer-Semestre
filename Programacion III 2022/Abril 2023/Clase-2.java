@@ -63,3 +63,49 @@ public class Persona {
     
 }
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
+/*Marino afredo
+enumeracion de continentes */
+
+package enumeraciones;
+
+public enum Continentes {
+    AFRICA(53, "1.2 billones"),
+    EUROPA(46, "1.1 billones"),
+    ASIA(44, "1.9 millones"),
+    AMERICA(34, "150.2 millones"),
+    OCEANIA(14, "1.2 billones");
+    
+    private final int paises;
+    private final String habitantes;
+    
+    Continentes(int paises, String habitantes){
+        this.paises = paises;
+        this.habitantes = habitantes;
+    }
+
+//Método get
+    public int getPaises(){
+        return this.paises;
+    }
+    
+    public  String getHabitantes(){
+        return this.habitantes;
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+//Bruno Marchetti
+    //1.4 Manejo de bloques de código
+
+package test;
+
+import domain.Persona;
+
+public class testBloqueInicializacion {
+    public static void main(String[] args) {
+        Persona persona1 = new Persona();
+        System.out.println("persona1 = " + persona1);
+        
+        Persona persona2 = new Persona();
+        System.out.println("persona2 = " + persona2);
+    }
+}

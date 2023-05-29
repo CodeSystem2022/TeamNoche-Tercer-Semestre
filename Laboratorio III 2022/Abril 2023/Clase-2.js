@@ -24,3 +24,35 @@ console.log(Array.isArray(autos2)) //usamos la clase Array.isArray que devuelve 
 
 console.log(autos2 instanceof Array) //Devuelve un booleano
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+//MARINO ALFREDO 
+
+//MODIFICAMOS LOS ELEMENTOS DEL ARREGLO
+
+autos[1] = 'Volvo';
+consola.log(autos[1]);
+
+//AGREGAMOS NUEVOS VALORES AL ARREGLO
+
+autos.push('Audi');//AGREGAMOS EL ELEMENTO AL FINAL DEL ARREGLO
+consola.log(autos);
+
+//OTRAS FORMAS DE AGREGAR ELEMENTOS EL ARREGLO
+
+autos[autos.longitud] = 'Porche';
+consola.log(automático);
+
+//TERCERA FORMA DE AGREGAR ELEMENTOS TENER "CUIDADO"
+autos[6] = 'Renault';//aqui ocupamos un espacio de memoria de mas,queda un espacio vacio
+consola.log(autos);
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//BRUNO MARCHETTI 
+
+//Recorremos los elementos de un arreglo
+console.log(autos[0]); //acceso manual x indice
+console.log(autos[2]);
+
+//acceso mediante ciclo
+for(let i = 0; i < autos.length; i++){
+    console.log(i+ ' : ' +autos[i]);
+}

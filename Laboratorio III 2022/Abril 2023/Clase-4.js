@@ -17,7 +17,7 @@ console.log(persona.email);
 console.log(persona.edad);
 console.log(persona);
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------------------------------
 //Julio Ezequiel Soria
 //Crea un nuevo objeto en memoria
 
@@ -27,4 +27,28 @@ perosna2.direccion = 'Salada 14'
 perosna2.telefono = '02000100'
 
 console.log(perosna2.telefono)
--------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Alfredo Marino
+// agregar y eliminar propiedades de un objeto
+
+console.log(persona.apellido);
+persona.apellido = "Marino"; // cambio dinamico de un valor del objeto
+console.log(persona.apellido);
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Franco J. Videla
+
+// Imprime el objeto como un arreglo con la funcion Object.values()
+
+console.log("\nDistintas formas de imprimir un objeto: Forma 3")
+let personaArray = Object.values(persona); // pasamos el objeto persona como parámetro
+console.log(personaArray)
+
+// Utilizaremos el método JSON.stringify()
+
+console.log("\nDistintas formas de imprimir un objeto: Forma 4")
+let personaString = JSON.stringify(persona); // convierte el objeto en una cadena
+console.log(personaString);
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------

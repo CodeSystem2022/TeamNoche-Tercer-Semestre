@@ -42,3 +42,120 @@ public class Clase1 {
     }
 }
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
+/*Marino afredo
+MODIFICADORES DE ACCESO PÚBLICO */
+
+package paquete1;
+
+public class Clase1 {
+    public String atributoPublic = "Valor atributo public";
+    
+    public Clase1(){
+        System.out.println("Constructor public");
+    }
+    
+ 
+    public void metodoPublico(){
+        System.out.println("Método públic");
+  
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+//Bruno Marchetti
+//1.3 Modificadores de acceso public
+package test;
+import paquete1.Clase1;
+
+public class TestModificadoresAcceso {
+    public static void main(String[] args) {
+        Clase1 clase1 = new Clase1();
+        System.out.println(" Clase1 = " + clase1.atributoPublic);
+        clase1.metodoPublico();
+        
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+//Bruno Marchetti
+//1.4 Modificadores de acceso protected
+            package paquete2;
+
+import paquete1.Clase1;
+
+public class Clase3 extends Clase1{
+    public Clase3(){
+      super("protected");
+      this.atributoProtected = "Accedemos desde la clase hija";
+        System.out.println("AtributoProtected = " + this.atributoProtected);
+        this.atributoPublic = "es totalmente publico";
+        
+    }
+    
+}
+
+
+#MODIFICACION A LA CLASE 1
+package paquete1;
+
+public class Clase1 {
+    public String atributoPublic = "Valor atributo public";
+    protected String atributoProtected = "Valor atributo protected";
+    
+    public Clase1 (){
+        System.out.println("Constructor public");
+    }
+    
+    protected Clase1(String atributoPublic){
+        System.out.println("Constructor protected");
+    }
+    
+    public void metodopublico(){
+        System.out.println("Metodo public");
+    }
+    
+protected void metodoProtected(){
+    System.out.println("Metodo protected");
+}
+    
+}
+
+package test;
+
+import paquete1.Clase1;
+import paquete2.Clase3;
+
+public class TestModificadoresdeAcceso {
+    public static void main(String[] args) {
+        Clase1 clase1 = new Clase1();
+        System.out.println("clase1 = " + clase1.atributoPublic);
+        clase1.metodopublico();
+        Clase3 claseHija = new Clase3();
+        System.out.println("claseHija = " + claseHija);
+    }
+    
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+//Bruno Marchetti
+//1.5 Modificadores de acceso protected
+        package paquete1;
+
+public class TestDefault {
+  public static void main(String[] args){
+    ClaseHija2 claseH2 = new ClaseHija2();
+    claseH2.atributoDefault = "Cambio desde la prueba";
+    System.out.println("claseH2 atributo default = " + claseH2.atributoDefault9;
+                       ----------------------------------------------------------------------------------------------------------------------------------------------------------
+//Bruno Marchetti
+//1.6 Modificadores de acceso private
+                       package paquete1;
+
+import paquete2.Clase4;
+
+public class TestDefault {
+    public static void main(String[] args) {
+        ClaseHija2 claseH2 = new ClaseHija2(); 
+        claseH2.atributoDefault = "Cambio desde la prueba";
+        System.out.println("claseH2 atributo default = " + claseH2.atributoDefault);
+    
+        Clase4 clase4 = new Clase4("Publico");
+        System.out.println(clase4.getAtributoPrivate());
+        clase4.setAtributoPrivate("Cambio");
+        System.out.println("clase4 = " + clase4.getAtributoPrivate());
+    }

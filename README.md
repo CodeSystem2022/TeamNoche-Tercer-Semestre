@@ -33,7 +33,7 @@ Integrantes de TEAM NOCHE:
 |-----------------------|----------------------|
 |:pencil: Primer semana | No hubo              | 
 |:pencil: Segunda semana| No hubo              |
-|:pencil: Tercer semana |   Hernan Suarez      |
+|:pencil: Tercer semana | Carlos Hernan Suarez |
 |:pencil: Cuarta semana |   Analia Alvarenga   |
 
 ## 📆 `Scrum Master mes de mayo`
@@ -51,6 +51,6 @@ Integrantes de TEAM NOCHE:
 |-----------------------|----------------------|
 |:pencil: Primer semana |  Alfredo Marino      | 
 |:pencil: Segunda semana|   Maria Gonzalez     |
-|:pencil: Tercer semana |   Marlene Gomez      |
+|:pencil: Tercer semana |   Marlene Soriano    |
 |:pencil: Cuarta semana |    Franco Videla     |
 
