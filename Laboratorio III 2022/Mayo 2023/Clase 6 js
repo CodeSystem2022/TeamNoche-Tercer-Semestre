@@ -16,6 +16,7 @@ console.log(persona2); Persona { nombre: 'Martín', apellido: 'Pérez'}
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Contreras, Yamila Belen
 #6.2 Método Get y Set. Parte Get. Parte Set
+
 class Persona{
     constructor(nombre, apellido){
         this._nombre = nombre;
@@ -41,4 +42,49 @@ let persona2 = new Persona('Martín', 'Pérez');
 console.log(persona2.nombre); Martín 
 persona2.nombre = 'Juan Carlos';
 console.log(persona2.nombre); Juan Carlos
+//console.log(persona2);
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Contreras, Yamila Belen
+#6.2.1 Tarea asignada
+#Creación del método Set y Get para el atributo 'apellido'
+
+class Persona{
+    constructor(nombre, apellido){
+        this._nombre = nombre;
+        this._apellido = apellido;
+    }
+
+    get nombre(){
+        return this._nombre;
+    }
+
+    set nombre(nombre){
+        this._nombre = nombre;
+    }
+
+    get apellido(){
+        return this._apellido;
+    }
+
+    set apellido(apellido){
+        this._apellido = apellido;
+
+}
+
+}
+
+let persona1 = new Persona('Yamila', 'Contreras');
+console.log(persona1.apellido); Contreras
+//console.log(persona1.nombre); 
+persona1.apellido = 'Casas';
+console.log(persona1.apellido); Casas
+//console.log(persona1.nombre); 
+//console.log(persona1); 
+let persona2 = new Persona('Martín', 'Pérez');
+console.log(persona2.apellido); Perez
+//console.log(persona2.nombre); 
+persona2.apellido = 'García';
+console.log(persona2.apellido); García
+//console.log(persona2.nombre); 
 //console.log(persona2);
