@@ -9,7 +9,14 @@ let persona = {
     nombre:'Carlos',
     apellido: 'Gil',
     email: 'cgil@gmail.com',
-    edad : 30
+    edad : 28,
+    idioma: 'ES',
+    get lang(){
+        return this.idioma.toUpperCase();//Convierte las minusculas en mayusculas
+    },
+    set lang(lang){
+        this.idioma = lang.toUpperCase();
+    },
     nombreCompleto: function(){ //metodo o funcion en JavaScript
         return this.nombre+''+this.apellido;
     },
@@ -66,6 +73,9 @@ console.log(personaString);
 
 console.log('Comenzamos a utilizar el metodo get');
 console.log(persona.nombreEdad);
+console.log('Comenzamos con el metodo get y set para idiomas');
+persona.lang = 'en';
+console.log(persona.lang);
   ------------------------------------------------------------------------------------------------------------------------------------------------------
 // Franco J. Videla
 // Agregar metodos al constructor del objeto
