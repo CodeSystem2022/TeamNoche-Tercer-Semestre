@@ -63,3 +63,27 @@ let arreglo = ['Esp.', '5498888888'];
 console.log(persona4.nombreCompleto2.apply(persona5, arreglo));
 
 //-------------------------------------------------------------------------------------------------------------------------------------------
+
+//Métodos get y set  Parte 2 - 
+//Marino Alfredo 
+
+let persona = {
+    nombre: 'Carlos',
+    apellido: 'Gil',
+    email: 'cgil@gmail.com',
+    edad:28,
+    idioma: 'es'
+    get lang(){
+        return this.idioma.toUpperCase(); //Convierte las minusculas a mayusculas
+    },
+    set lang(lang){
+        this.idioma = lang.toUpperCase();
+    },
+    nombreCompleto: Function(){ //Metodo o funcion en javascript
+        return this.nombre+' '+this.apellido;
+    },
+    get nombreEdad(){ // este es el metodo get
+ 	return 'El nombre es: '+this.nombre+', Edad: '+this.edad; 
+    }
+}
+---------------------------------------------------------------------------------------------------------------
