@@ -60,7 +60,7 @@ while opcion != 4:
         
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Contreras, Yamila Belen
-# Pruebas ingresando otras clases (Parte 1)
+# Pruebas ingresando otras clases (Parte 1 y 2)
 
 from dominio.pelicula import Pelicula
 from servicio.catalogo_peliculas import CatalogoPeliculas as cp
@@ -86,3 +86,30 @@ while opcion != 4:
         opcion = None
     else:
         print('Salida del programa')
+ 
+C:\Users\USUARIO\TecnicaturaProgramacion3\Python3\Catalogo\Leccion03\catalogo_peliculas\venv\Scripts\python.exe C:/Users/USUARIO/TecnicaturaProgramacion3/Python3/Catalogo/Leccion03/catalogo_peliculas/test_catalogo_peliculas.py
+Opciones: 
+1. Agregrar Película
+2. Lista de Películas
+3. Eliminar Catálogo de Películas
+4. Salir
+Digite una opción de menú (1-4): 2
+--------------Catálogo de películas---------------
+Harry Potter y La Piedra Filosofal
+Harry Potter y La Cámara de los Secretos
+Harry Potter y El Prisionero de Azkaban
+Harry Potter y El Cáliz de Fuego
+Harry Potter y La Orden del Fénix
+Harry Potter y El Príncipe Meztizo
+Harry Potter y Las Reliquias de la Muerte Parte 1
+Harry Potter y Las Reliquias de la Muerte Parte 2
+
+Salida del programa
+Opciones: 
+1. Agregrar Película
+2. Lista de Películas
+3. Eliminar Catálogo de Películas
+4. Salir
+Digite una opción de menú (1-4): 4
+Salida del programa
+
