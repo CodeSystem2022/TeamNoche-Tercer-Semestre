@@ -1,4 +1,7 @@
-import psycopg2 as bd #Esto es para poder conectarnos a Postgre
+# Franco J. Videla
+# Manejo de transacciones con with (auto)
+
+import psycopg2 as bd # Esto es para poder conectarnos a Postgre
 
 conexion = bd.connect(user='postgres', password='admin', host='127.0.0.1', port='5432', database='test_bd')
 try:
@@ -18,3 +21,6 @@ finally:
     conexion.close()
     
     print('Termina la transacción')
+
+#--------------------------------------------------------------------------------------------------------------------------------------------
+
