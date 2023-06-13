@@ -67,3 +67,27 @@ for(propidad in persona){
     console.log(propidad); nombre, apellido, email, edad, nombreCompleto
     console.log(persona[propidad]); Carlos, Gil, cgil@gmail.com, 30, 
 }
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+// carlos hernan suarez.
+// Agregamos métodos a  los objetos 
+Let X = 10; //variable de tipo primitivo
+console.log(x.lenght;
+
+//objeto
+let persona ={
+    nombre: 'carlos',
+    apellido: 'gil',
+    email: 'cgil@gmail.com',
+    edad: 30,
+    nombreCompleto: function(){    
+        return this.nombre+' '+this.apellido;
+    }
+}
+
+console.log(persona.nombre);
+console.log(persona.apellido);
+console.log(persona.email);
+console.log(persona.edad);
+console.log(persona);
+console.log(persona.nombreCompleto());
