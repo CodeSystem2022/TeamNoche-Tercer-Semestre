@@ -18,3 +18,15 @@ class Persona:
         @property
         def id_persona(self):
             return self._id_persona
+        
+        @id_persona.setter
+        def id_persona(self,id_persona):
+            self._id_persona = id_persona
+
+        @property
+        def nombre(self):
+            return self._nombre
+
+        @nombre.setter
+        def id_persona(self,nombre):
+            self._nombre = nombre
