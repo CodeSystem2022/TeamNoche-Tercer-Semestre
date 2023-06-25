@@ -47,6 +47,10 @@ class Persona:
         def email(self,email):
             self._email = email
 
+#--------------------------------------------------------------------------------------------------------------------
+#Soria Ezequiel
+#8.2 prueba de clase persona
+
 if __name__ == '__main__':
     persona1 = Persona(1, 'Franco', 'Videla', 'francojvidela@mail.com')
     log.debug(persona1)
@@ -55,7 +59,56 @@ if __name__ == '__main__':
     persona1 = Persona(id_persona = 1)
     log.debug(persona1)
 
-#por continuar
+#-------------------------------------------------------------------------------------------------------------------------
+#Soria Ezequiel
+#8.3 Creación de la Clase Conexión: Parte 1, 2 y 3
+
+import psycopg2 as db
+from logger_base import log
+import sys
+
+class conexion:
+    _DATABASE = 'test_bd'
+    _USERNAME = 'postgres'
+    _PASSWORD = 'Admin'
+    _DB_PORT = '5432'
+    _HOST = 'localhost'
+    _conexion = None
+    _cursor = None
+
+    @classmethod
+    def obtener_conexion(cls):
+        if cls._conexion is None:
+            try: 
+                cls._conexion = db.connect(host=cls._HOST,
+                                           user = cls._USERNAME,
+                                           password = cls._PASSWORD,
+                                           port = cls._DB_PORT,
+                                           database = cls._DATABASE)
+                log.debug(f'Conexion exitosa: {cls._conexion}')
+                return cls._conexion
+            except Exception as e:
+                log.error(f'Ocurrio un error: {e}')
+                sys.exit()
+        else:
+            return cls._conexion
+
+    @classmethod
+    def obtener_cursor(cls):
+        if cls._cursor is None:
+            try:
+                cls._cursor = cls.obtener_conexion().cursor()
+                log.debug(f'Se abrio correctamente el cursor: {cls._cursor}')
+                return cls._cursor
+            except Exception as e:
+                log.error(f'Ocurrio un error: {e}')
+                sys.exit()
+        else:
+            return cls._cursor
+
+if __name__ == '__main__':
+    conexion.obtener_conexion()
+    conexion.obtener_cursor()
 
 #---------------------------------------------------------------------------------------------------------------------------
 
