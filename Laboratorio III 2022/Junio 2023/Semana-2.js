@@ -135,4 +135,111 @@ let personanueva = {
 
                      let arreglo = ['Ingeniero en sistemas','02204991240'];
                      console.log(persona6.nombreCompleto3.apply(persona6,arreglo));
+
+
+-----------------------------------------------------------------------------------------------
+
+    //6.1 - Clase 6 
+
+class Persona{ //clase padre
+    constructor(nombre,apellido){
+        this.nombre = nombre;
+        this.apellido = apellido;
+        
+    }
+}
+
+let persona1 = new Persona('Martin','Perez');
+console.log(persona1);
+
+let persona2 = new Persona ('Franco','Da Cruz');
+
+console.log(persona2);
+
+//clase hija - herencia  ↓
+
+class Empleado extends Persona { //clase hija
+    constructor(nombreempleado,apellidoempleado,departamento){
+        super(nombreempleado,apellidoempleado); //super se usa para definir el constructor de la clase hija
+        this._departamento = departamento;
+
+    }
+    get departamento(){
+        return this._departamento;
+    }
+    set departamento(departamento){
+        this._departamento = departamento;
+
+    } //Listos sus métodos get y set para la clase hija con un solo atributo
+};
+
+//6.2 Get & Set 
+class Persona2{
+    constructor(nombre,apellido){
+        this._nombre = nombre;
+        this._apellido = apellido;
+        
+    }
+    get nombre(){
+        return this._nombre;
+    }
+    set nombre(nombre){
+        this._nombre = nombre;
+    }
+}
+
+let persona3 = new Persona2('Tomas','Shelby');
+//console.log(persona3);
+console.log(persona3.nombre);
+persona3.nombre = 'Arhur';
+console.log(persona3.nombre)
+
+let persona4 = new Persona2 ('Harvey','Specter');
+console.log(persona4.nombre);
+//console.log(persona4);
+persona4.nombre = "Poly";
+console.log(persona4.nombre);
+
+//Ejercicio Crear el método get y set para el atributo de apellido//
+//luego modificar el apellido a través del  set y mostrar con un console.log lo que es el get donde muestra el resultado obtenido//
+
+class persona2a {
+    constructor(nombre,apellido){
+        this._nombre = nombre;
+        this._apellido = apellido;
+    }
+
+    get apellido() {
+        this._apellido = apellido;
+    }
+
+    set apellido(apellido){
+        this._apellido = apellido;
+    }
+//set con el cual  cambié el apellido ↓
+    set apellido(apellido2)
+    {this._apellido = apellido2};
+}
+
+let persona5 = new persona2a ('Julian','Alvarez');
+console.log(persona5._apellido);
+persona5.apellido2 = 'Martinez';
+console.log(persona5.apellido2);
+
+
+//6.3 hoisting y clases: Parte 1 y 2. No se puede crear una persona sin antes inicializar lo que es la persona.
+//Es decir queno funciona el hoisting. No se puede crear un objeto antes de haber defiido la clase //
+//Primero se crea la clase, luego el sujeto/persona, luego su constructor y sus métodos junto con su set y get. 
+//El console para imprimir va fuera del objeto.
+
+
+
+//6.4 Herencia: Let de la clase hija ↓
+
+let empleado1 = new Empleado('Maria','Gimenez','Sistemas');
+console.log(empleado1);
+
+
+
+
            
