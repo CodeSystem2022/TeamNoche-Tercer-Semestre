@@ -2,11 +2,9 @@
 //8.1 Introducción a JavBeans -> Creación del JavaBeans
 package Domain;
 import java.io.Serializable;
-
 public class Persona implements Serializable {
     private String nombre;
     private String apellido;
-    
     //Constructor vacio: esto es obligatorio
     public Persona(){
        
