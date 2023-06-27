@@ -6,7 +6,7 @@
 package domain;
 
 public class Empleado {
-   protected String nombre;
+    protected String nombre;
     protected double sueldo;
     
     public Empleado(String nombre, double sueldo){
@@ -35,7 +35,6 @@ public class Empleado {
         this.sueldo = sueldo;
     }
     
-      
 }
 
 // Creamos la clase Escritor 
@@ -54,7 +53,7 @@ public class Escritor extends Empleado{
     @Override
     public String obtenerDetalles(){
         return super.obtenerDetalles()+", Tipo Escritura: "+tipoEscritura.getDescripcion();
-         
+    
     }
     
     @Override
@@ -90,7 +89,7 @@ public enum TipoEscritura {
 }
 ------------------------------------------------------------------
 //Carga de la clase TEST
-  package Test;
+package Test;
 
 /**
  * @author Soria ezequiel
@@ -151,8 +150,8 @@ public class TestConversionObjetos {
 -----------------------------------------------------------------------------
    //Creamos Clase Object 
    //Bruno Marchetti
-   
-   package test;
+
+package test;
 
 import domain. *;
 
@@ -218,8 +217,8 @@ public abstract class FiguraGeometrica {
    //5.5 Clases Abstractas (abstract)
    //Bruno Marchetti
    //Figura Rectangulo
-   
-   package domain;
+
+package domain;
 
 public class Rectangulo extends FiguraGeometrica{
     public Rectangulo(String tipoFigura) {
@@ -231,3 +230,4 @@ public class Rectangulo extends FiguraGeometrica{
         System.out.println("Se imprime un: " + this.getClass().getSimpleName());
     }
 }
+
