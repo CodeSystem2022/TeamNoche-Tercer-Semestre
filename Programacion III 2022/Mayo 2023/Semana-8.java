@@ -1,8 +1,6 @@
 //Florencia Pons
 //8.1 Introducción a JavBeans -> Creación del JavaBeans
-
 package Domain;
-
 import java.io.Serializable;
 
 public class Persona implements Serializable {
@@ -41,4 +39,3 @@ public class Persona implements Serializable {
         return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + '}';
     } 
 }
-______________________________________________________________________________________________________
