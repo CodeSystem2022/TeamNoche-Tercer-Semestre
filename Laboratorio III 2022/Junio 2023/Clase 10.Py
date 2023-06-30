@@ -17,20 +17,11 @@ class Conexion:
 
     @classmethod
     def obtenerConexion(cls):
-       if cls._conexion is None:
-           try:
-               cls._conexion =bd.connect(host=cls._HOST,
-                                         user=cls._USERNAME,
-                                         password=cls._PASSWORD,
-                                         port=cls._DB_PORT,
-                                         database=cls._DATABASE)
-               log.debug(f'Conexión Exitosa de la conexión:{cls._conexion}') 
-               return cls._conexion
-           except Exception as e:
-               log.error(f'Ocurrión un error:{e}')
-               sys.exit()
-       else:
-           return cls._conexion
+        pass
+    @classmethod
+    def obtenerCursor(cls):
+        pass
+    
        
 
 #---------------------------------------------------------------------------------------------------
