@@ -23,7 +23,15 @@ class Conexion:
                                          user=cls._USERNAME,
                                          password=cls._PASSWORD,
                                          port=cls._DB_PORT,
-                                         database=cls._DATABASE) 
+                                         database=cls._DATABASE)
+               log.debug(f'Conexión Exitosa de la conexión:{cls._conexion}') 
+               return cls._conexion
+           except Exception as e:
+               log.error(f'Ocurrión un error:{e}')
+               sys.exit()
+       else:
+           return cls._conexion
+       
 
 #---------------------------------------------------------------------------------------------------
 
