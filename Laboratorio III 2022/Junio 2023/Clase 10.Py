@@ -17,7 +17,13 @@ class Conexion:
 
     @classmethod
     def obtenerConexion(cls):
-        
+       if cls._conexion is None:
+           try:
+               cls._conexion =bd.connect(host=cls._HOST,
+                                         user=cls._USERNAME,
+                                         password=cls._PASSWORD,
+                                         port=cls._DB_PORT,
+                                         database=cls._DATABASE) 
 
 #---------------------------------------------------------------------------------------------------
 
