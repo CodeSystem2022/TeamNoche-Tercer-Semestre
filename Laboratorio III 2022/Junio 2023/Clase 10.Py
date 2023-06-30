@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 # Franco J. Videla
 # 10.1 POOL DE CONEXIONES CON PYTHON Y POSTGRESQL: Parte 1 y 2
 
-import psycopg2 as bd #otra forma de importar el psycopg2
-from logger_base import log
-import sys
+from psycopg2 import pool #otra forma de importar el psycopg2
+#from logger_base import log
+#import sys
 
 class Conexion:
     _DATABASE = 'test_bd'
@@ -14,6 +13,7 @@ class Conexion:
     _HOST = '127.0.0.1'
     _MIN_CON = 1
     _MAX_CON = 5
+    _pool = None
     
     @classmethod
     def obtenerConexion(cls):
@@ -23,6 +23,12 @@ class Conexion:
     def obtenerCursor(cls):
         pass
 
+    @classmethod
+    def obtenerPool(cls):
+        if cls._pool is None:
+            try:
+                cls._pool = pool.SimpleConnectionPool()
+                
 if __name == '__main__':
     pass
        
