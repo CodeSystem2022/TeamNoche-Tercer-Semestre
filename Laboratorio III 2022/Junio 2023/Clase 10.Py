@@ -2,7 +2,13 @@
 # Franco J. Videla
 # 10.1 POOL DE CONEXIONES CON PYTHON Y POSTGRESQL: Parte 1 y 2
 
+import psycopg2 as bd #otra forma de importar el psycopg2
+from logger_base import log
+import sys
 
+class Conexion:
+	_DATABASE = 'test_bd'
+	_USERNAME = 'postgres'
 
 #---------------------------------------------------------------------------------------------------
 
