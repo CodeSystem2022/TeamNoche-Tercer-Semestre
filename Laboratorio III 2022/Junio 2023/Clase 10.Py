@@ -12,16 +12,19 @@ class Conexion:
     _PASSWORD = 'admin'
     _DB_PORT = '5432'
     _HOST = '127.0.0.1'
-    _conexion = None
-    _cursor = None
-
+    _MIN_CON = 1
+    _MAX_CON = 5
+    
     @classmethod
     def obtenerConexion(cls):
         pass
+
     @classmethod
     def obtenerCursor(cls):
         pass
-    
+
+if __name == '__main__':
+    pass
        
 
 #---------------------------------------------------------------------------------------------------
