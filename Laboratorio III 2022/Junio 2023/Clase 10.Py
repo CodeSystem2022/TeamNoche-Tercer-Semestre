@@ -7,8 +7,17 @@ from logger_base import log
 import sys
 
 class Conexion:
-	_DATABASE = 'test_bd'
-	_USERNAME = 'postgres'
+    _DATABASE = 'test_bd'
+    _USERNAME = 'postgres'
+    _PASSWORD = 'admin'
+    _DB_PORT = '5432'
+    _HOST = '127.0.0.1'
+    _conexion = None
+    _cursor = None
+
+    @classmethod
+    def obtenerConexion(cls):
+        
 
 #---------------------------------------------------------------------------------------------------
 
