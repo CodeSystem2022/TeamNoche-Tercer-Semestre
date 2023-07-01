@@ -82,3 +82,19 @@ if __name__ == '__main__':
 #            personas.append(persona)
 #            return personas
 
+#@classmethod
+#def insertar(cls, persona):
+#    with CursorDelPool() as cursor:
+#        valores = (persona.nombre, persona.apellido, persona.email)
+#        cursor.execute(cls._INSERTAR, valores)
+#        log.debug(f'Persona Insertada: {persona}')
+#        return cursor.rowcount
+
+#@classmethod
+#def actualizar(cls, persona):
+#    with CursorDelPool() as cursor:
+#        valores = (persona.nombre, persona.apellido, persona.email)
+#        cursor.execute(cls._ACTUALIZAR, valores)
+#        log.debug(f'Persona actualizada: {persona}')
+#        return cursor.rowcount 
+
