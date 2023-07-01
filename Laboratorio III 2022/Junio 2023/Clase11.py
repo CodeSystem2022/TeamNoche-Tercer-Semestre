@@ -78,3 +78,7 @@ if __name__ == '__main__':
 #        registros = cursor.fetchall()
 #        personas = [] #creamos una lista
 #        for registro in registros:
+#            persona = Persona(registro[0], registro[1], registro[2], registro [3])
+#            personas.append(persona)
+#            return personas
+
