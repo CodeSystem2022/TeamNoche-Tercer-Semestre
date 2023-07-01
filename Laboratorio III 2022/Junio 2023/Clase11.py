@@ -69,3 +69,12 @@ if __name__ == '__main__':
         cursor.execute('SELECT* FROM persona')
         log.debug(cursor.fetchall())
 
+# Definimos los métodos de clase en persona DAO
+
+#@classmethod
+#def seleccionar(cls):
+#    with CursorDelPool() as cursor:
+#        cursor.execute(cls._SELECCIONAR)
+#        registros = cursor.fetchall()
+#        personas = [] #creamos una lista
+#        for registro in registros:
