@@ -41,8 +41,9 @@ else if (operacion == 5) {
                 System.out.println();
             } //Fin catch
        } //Fin while
-    } //Fin main
-private static void ejecutarOperacion(int operacion, Scanner entrada){
+   } //Fin main
+
+    private static void ejecutarOperacion(int operacion, Scanner entrada){
         System.out.print("Digite el valor para el operando1: ");
         var operando1 = Double.parseDouble(entrada.nextLine());
         System.out.print("Digite el valor para el operando2: ");
@@ -68,3 +69,17 @@ private static void ejecutarOperacion(int operacion, Scanner entrada){
             default -> System.out.println("Opcion erronea: " + operacion);
         } //Fin switch
     } //Fin metodo ejecutarOperacion
+
+    private static void mostrarMenu(){
+        //Mostramos el menú
+        System.out.println("""
+                1. Suma
+                2. Resta
+                3. Multiplicacion
+                4. Division
+                5. Salir
+                """);
+        System.out.print("Operacion a realizar? ");
+    } //Fin metodo mostrarMenu
+
+} //Fin clase Calculadora UTN
