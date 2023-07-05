@@ -58,6 +58,17 @@ if __name == '__main__':
 
 #---------------------------------------------------------------------------------------------------
 
+# Alumna Yamila Belen Contreras
+# 10.2 Obtener una conexión a partir del Pool: Parte 2
+
+@classmethod
+        def obtenerConexion(cls):
+            conexion = cls.obtenerPool().getconn()
+            log.debug(f'Conexión obtenida del pool: {conexion}')
+            return conexion
+
+#---------------------------------------------------------------------------------------------------
+
 #Marino Alfredo
 #Pruebas creando objetos del Pool de conexiones
 
