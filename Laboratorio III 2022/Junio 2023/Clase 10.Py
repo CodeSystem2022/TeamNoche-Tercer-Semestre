@@ -35,8 +35,37 @@ if __name == '__main__':
 
 #---------------------------------------------------------------------------------------------------
 
-# Franco J. Videla
-# 10.2 Obtener una conexión a partir del Pool: Parte 1 y 2
+# Alumna Yamila Belen Contreras
+# 10.2 Obtener una conexión a partir del Pool: Parte 1
+
+ @classmethod
+        def obtenerPool(cls):
+            if cls._pool is None:
+                try:
+                    cls._pool = pool.SimpleConnectionPool(cls._MIN_CON,
+                                                          cls._MAX_CON,
+                                                          host=cls._HOST,
+                                                          user=cls._USERNAME,
+                                                          password=cls._PASSWORD,
+                                                          port=cls._DB_PORT,
+                                                          database=cls._DATABASE)
+                    log.debug(f'creación del pool exitosa: {cls._pool}')
+                except Exception as e:
+                    log.error(f'Ocurrió un error al obtener el pool: {e}')
+                    sys.exit()
+            else:
+                return cls._pool
+
+#---------------------------------------------------------------------------------------------------
+
+# Alumna Yamila Belen Contreras
+# 10.2 Obtener una conexión a partir del Pool: Parte 2
+
+@classmethod
+        def obtenerConexion(cls):
+            conexion = cls.obtenerPool().getconn()
+            log.debug(f'Conexión obtenida del pool: {conexion}')
+            return conexion
 
 #---------------------------------------------------------------------------------------------------
 
