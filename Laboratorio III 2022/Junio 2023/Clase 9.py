@@ -36,7 +36,7 @@ class PersonaDAO:
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Alumna Yamila Belen Contreras
 
-# 9.2 Prueba método seleccionar
+# 9.2 Prueba Método Seleccionar
 
 if __name__== '__main__':
     personas = PersonaDAO.seleccionar()
@@ -45,3 +45,15 @@ if __name__== '__main__':
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Alumna Yamila Belen Contreras
+
+# 9.3 Método Seleccionar
+
+@classmethod
+    def insertar(cls, persona):
+        with Conexion.obtenerConexion():
+            with Conexion.obtenerCursor() as cursor:
+                valores = (persona.nombre, persona.apellido, persona.email)
+                cursor.execute(cls._INSERTAR, valores)
+                log.debug(f'Persona Insertada: {persona}')
+                return cursor.rowcount
