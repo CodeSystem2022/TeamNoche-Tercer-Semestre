@@ -112,8 +112,26 @@ if __name__ == '__main__':
 # Pruebas de personaDAO - Parte 1
 
 if __name__ == '__main__':
+    # Eliminar un registro
+    # persona1 = Persona(id_persona=8)
+    # personas_eliminadas = PersonaDAO.eliminar(persona1)
+    # log.debug(f'Personas eliminadas: {personas_eliminadas}')
 
-#Insetar un registro
-    persona1 = Persona(nombre='Marcos', apellido='Tejada', email=tejagam@mail.com)
+    # Actualizar un registro
+    # persona1 = Persona(1, 'Juan José', 'Pena', 'jjpena@mail.com')
+    # personas_actualizadas = PersonaDAO.actualizar(persona1)
+
+    #Insetar un registro
+    persona1 = Persona(nombre='Marcos', apellido='Tejada', email=tejadam@mail.com)
     personas_insertadas = PersonaDAO.insetar(persona1)
     log.debug(f'Personas insertadas: {personas_insertadas}')
+
+    # Seleccionar objetos
+    personas = PersonaDao.seleccionar()
+    for persona in personas
+        log.debug(persona)
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Alumna: Yamila Belen Contreras
+
+# Pruebas de personaDAO - Parte 2
