@@ -78,9 +78,42 @@ class Empleado extends Persona{
     }
 
     toString(){
-        return `${super.toString()} 
+        return `
+        ${super.toString()} 
         ${this._idEmpleado} 
         ${this._sueldo}`;
+    }
+}
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------
+//9.4 Creación de la Clase Cliente
+class Empleado extends Persona{
+
+    static contadorClientes = 0;
+
+    constructor(nombre, apellido, edad, fecharegistro){
+        super(nombre, apellido, edad);
+        this._idCliente = ++Cliente.contadosClientes;
+        this._fecharegistro = fecharegistro;
+    }
+
+    get _idCliente() {
+        return this._idCliente;
+    }
+
+    get fecharegistro() {
+        return this._fecharegistro;
+    }
+
+    set fecharegistro(fecharegistro) {
+        this._fecharegistro = Fecharegistro;
+    }
+
+    toString(){
+        return `
+        ${super.toString()} 
+        ${this._idCliente} 
+        ${this._fecharegistro}`;
     }
 }
 
