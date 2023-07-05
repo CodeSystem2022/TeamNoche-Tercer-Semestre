@@ -105,3 +105,15 @@ if __name__ == '__main__':
 #        cursor.execute(cls._ELIMINAR, valores)
 #        log.debug(f'Los objetos eliminados son: {persona}')
 #        return cursor.rowcount
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Alumna: Yamila Belen Contreras
+
+# Pruebas de personaDAO - Parte 1
+
+if __name__ == '__main__':
+
+#Insetar un registro
+    persona1 = Persona(nombre='Marcos', apellido='Tejada', email=tejagam@mail.com)
+    personas_insertadas = PersonaDAO.insetar(persona1)
+    log.debug(f'Personas insertadas: {personas_insertadas}')
