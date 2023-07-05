@@ -2,6 +2,10 @@
 
 # 9.1 Clase PersonaDAO: método seleccionar
 
+from capa_datos_persona.Persona import Persona
+from capa_datos_persona.conexion import Conexion
+from logger_base import log
+
 class PersonaDAO:
     """
 
@@ -27,9 +31,17 @@ class PersonaDAO:
             for registro in registros:
                 persona = Persona(registro[0], registro[1], registro[2], registro[3])
                 personas.append(persona)
+            return personas
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Alumna Yamila Belen Contreras
 
 # 9.2 Prueba método seleccionar
+
+if __name__== '__main__':
+    personas = PersonaDAO.seleccionar()
+    for persona in personas
+        log.debug(persona)
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
