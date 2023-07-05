@@ -93,7 +93,7 @@ if __name__ == '__main__':
     # Insertar un registro
    # persona1 = Persona(nombre='Omero', apellido='Ramos', email='omeror@mail.com')
    # personas_insertadas = personaDAO.insertar(persona1)
-   # log.debug(f'personas insertadas: {personas_insertadas}')
+   # log.debug(f'Personas insertadas: {personas_insertadas}')
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -115,3 +115,30 @@ if __name__ == '__main__':
     persona1 = Persona(id_persona=13)
     personas_eliminadas = PersonaDAO.eliminar(persona1)
     log.debug(f'Personas eliminada: {personas_eliminadas}')
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Alumno Suarez, Carlos Hernan
+# 9.6 Haciendo pruebas y eliminando errores
+
+                    
+if __name__ == '__main__':
+    #Eliminar un registro
+    #persona1 = Persona(id_persona=13)
+    #personas_eliminadas = PersonaDAO.eliminar(persona1)
+    #log.debug(f'Personas eliminada: {personas_eliminadas}')
+
+    # Actualizar un registro
+    #persona1= Persona(1, 'Juan Jose', 'Pena', 'jjpena@mail.com')
+    #personas_actualizadas = PersonaDAO.actualizar(persona1)
+    #log.debug(f'Personas actualizadas: {personas_actualizadas}')
+
+    # Insertar un registro
+    # persona1 = Persona(nombre='Omero', apellido='Ramos', email='omeror@mail.com')
+    # personas_insertadas = personaDAO.insertar(persona1)
+    # log.debug(f'Personas insertadas: {personas_insertadas}')
+
+    # Seleccionar objetos
+    personas = PersonaDAO.seleccionar()
+    for persona in personas:
+        log.debug(persona)
