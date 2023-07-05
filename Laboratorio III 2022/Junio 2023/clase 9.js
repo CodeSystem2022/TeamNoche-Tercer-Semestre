@@ -239,4 +239,14 @@ let Persona2 = new Persona('carla', 'ortega', 22);
 console.log(Persona2.toString()); 2 carla ortega 22
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
-//
+//9.7  Prueba Clase Empleado
+//Prueba clase Empleado
+
+let Empleado1 = new Empleado('pedro', 'roman', 18, 5000);
+console.log(Empleado1.toString()); 3 pedro roman 18 1 5000
+
+let Empleado2 = new Empleado('jonas', 'torres', 30, 7000);
+console.log(Empleado2.toString()); 4 jonas torres 30 2 7000
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------
+//9.8 Preueba clase 
