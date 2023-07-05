@@ -88,7 +88,7 @@ if __name__ == '__main__':
     # Actualizar un registro
     persona1= Persona(1, 'Juan Jose', 'Pena', 'jjpena@mail.com')
     personas_actualizadas = PersonaDAO.actualizar(persona1)
-    log.debug(f'Personas actualziadas: {personas_actualizadas}')
+    log.debug(f'Personas actualizadas: {personas_actualizadas}')
 
     # Insertar un registro
    # persona1 = Persona(nombre='Omero', apellido='Ramos', email='omeror@mail.com')
