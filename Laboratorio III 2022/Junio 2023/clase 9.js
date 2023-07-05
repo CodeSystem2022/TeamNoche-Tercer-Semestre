@@ -249,4 +249,12 @@ let Empleado2 = new Empleado('jonas', 'torres', 30, 7000);
 console.log(Empleado2.toString()); 4 jonas torres 30 2 7000
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
-//9.8 Preueba clase 
+//9.8 Preueba clase  cliente
+
+//Prueba clase Cliente
+
+let Cliente1 = new Cliente('Miguel', 'Zala', 29, new Data());
+console.log(Cliente1.toString());
+
+let Cliente2 = new Cliente('natalia', 'ortega', 22, new Data());
+console.log(Cliente2.toString());
